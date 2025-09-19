@@ -5,10 +5,13 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  server: {
+  server:
+    {
     host: "::",
     port: 8080,
   },
+    base: '/portfolio-site/',
+
   // Removed lovable-tagger plugin from the Vite configuration
   plugins: [react()],
   resolve: {
